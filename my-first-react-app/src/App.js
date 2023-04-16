@@ -8,7 +8,10 @@ function App() {
     <header>
       <article>To jest Test</article>
     </header>
-    <article>To jest artykuł</article>
+    <article>To jest artykuł
+      <p>Jakiś paragraf</p>
+      <div>Jakiś div</div>
+    </article>
     </>
   );
 }
