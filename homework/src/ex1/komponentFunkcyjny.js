@@ -3,6 +3,10 @@ const multiplyTwoNumbers = (a, b) => {
   return a * b;
 };
 
+const odejmijDwieLiczby = (a, b) => {
+  return a - b;
+};
+
 export const KomponentFunkcyjny = () => {
   const naglowek = <h3>Nauka React</h3>;
   const button = <button>Click me</button>;
@@ -20,6 +24,8 @@ export const KomponentFunkcyjny = () => {
     return a + b;
   };
 
+  const wynikOdejmowania = odejmijDwieLiczby(5, 10);
+
   return (
     <article>
       {naglowek}
@@ -34,8 +40,9 @@ export const KomponentFunkcyjny = () => {
       <div>{tablica}</div>
 
       <div>
-        <p>Wynik dodawania 5 + 10 = {addTwoNumbers(5, 10)}</p>
-        <p>Wynik mnożenia 5 * 10 = {multiplyTwoNumbers(5, 10)}</p>
+        <p>Wynik dodawania: 5 + 10 = {addTwoNumbers(5, 10)}</p>
+        <p>Wynik mnożenia: 5 * 10 = {multiplyTwoNumbers(5, 10)}</p>
+        <p>Wynik odejmowania: 5 - 10 = {wynikOdejmowania}</p>
       </div>
     </article>
   );
