@@ -1,3 +1,8 @@
+// funkcja zewnętrzna poza komponentem
+const multiplyTwoNumbers = (a, b) => {
+  return a * b;
+};
+
 export const KomponentFunkcyjny = () => {
   const naglowek = <h3>Nauka React</h3>;
   const button = <button>Click me</button>;
@@ -9,6 +14,11 @@ export const KomponentFunkcyjny = () => {
   };
 
   const tablica = [1, 2, 3, 4];
+  
+  // funkcja wewnętrzna wewnątrz komponentu
+  const addTwoNumbers = (a, b) => {
+    return a + b;
+  };
 
   return (
     <article>
