@@ -8,10 +8,15 @@ export const KomponentFunkcyjny = () => {
     job: 'teacher'
 }
 
+ const tablica = [1, 2, 3, 4]; 
+
  return(<article>
     {naglowek}
     {button}
     {notatki}
     {`Name: ${obiekt.name} Age: ${obiekt.age} Job: ${obiekt.job}`}
+    <div>
+        {tablica}
+    </div>
  </article>)
 }
