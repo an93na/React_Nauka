@@ -14,7 +14,7 @@ export const KomponentFunkcyjny = () => {
   };
 
   const tablica = [1, 2, 3, 4];
-  
+
   // funkcja wewnętrzna wewnątrz komponentu
   const addTwoNumbers = (a, b) => {
     return a + b;
@@ -27,6 +27,11 @@ export const KomponentFunkcyjny = () => {
       {notatki}
       {`Name: ${obiekt.name} Age: ${obiekt.age} Job: ${obiekt.job}`}
       <div>{tablica}</div>
+
+      <div>
+        <p>Wynik dodawania 5 + 10 = {addTwoNumbers(5,10)}</p>
+        <p>Wynik mnożenia 5 * 10 = {multiplyTwoNumbers(5,10)}</p>
+      </div>
     </article>
   );
 };
