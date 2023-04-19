@@ -25,12 +25,17 @@ export const KomponentFunkcyjny = () => {
       {naglowek}
       {button}
       {notatki}
-      {`Name: ${obiekt.name} Age: ${obiekt.age} Job: ${obiekt.job}`}
+      <ul>
+        <li>Name: {obiekt.name}</li>
+        <li>Age: {obiekt.age}</li>
+        <li>Job: {obiekt.job}</li>
+      </ul>
+
       <div>{tablica}</div>
 
       <div>
-        <p>Wynik dodawania 5 + 10 = {addTwoNumbers(5,10)}</p>
-        <p>Wynik mnożenia 5 * 10 = {multiplyTwoNumbers(5,10)}</p>
+        <p>Wynik dodawania 5 + 10 = {addTwoNumbers(5, 10)}</p>
+        <p>Wynik mnożenia 5 * 10 = {multiplyTwoNumbers(5, 10)}</p>
       </div>
     </article>
   );
