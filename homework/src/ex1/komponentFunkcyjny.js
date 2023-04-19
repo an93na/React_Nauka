@@ -7,6 +7,17 @@ const odejmijDwieLiczby = (a, b) => {
   return a - b;
 };
 
+const podzielLiczbe = (a,b) => {
+  return a/b;
+}
+
+const jakisObiekt = {
+  name: 'Dorota',
+  age: 34,
+  job: 'student',
+  hobby: 'art'
+}
+
 export const KomponentFunkcyjny = () => {
   const naglowek = <h3>Nauka React</h3>;
   const button = <button>Click me</button>;
@@ -25,6 +36,7 @@ export const KomponentFunkcyjny = () => {
   };
 
   const wynikOdejmowania = odejmijDwieLiczby(5, 10);
+  const wynikDzielenia = podzielLiczbe(5,10)
 
   return (
     <article>
@@ -43,7 +55,16 @@ export const KomponentFunkcyjny = () => {
         <p>Wynik dodawania: 5 + 10 = {addTwoNumbers(5, 10)}</p>
         <p>Wynik mnożenia: 5 * 10 = {multiplyTwoNumbers(5, 10)}</p>
         <p>Wynik odejmowania: 5 - 10 = {wynikOdejmowania}</p>
+        <p>Wynik dzielenia: 5/10 = {wynikDzielenia}</p>
       </div>
+
+      <div>
+       <p>Imie: {jakisObiekt.name}</p> 
+       <p>Wiek: {jakisObiekt.age}</p> 
+       <p>Nazwisko: {jakisObiekt.job}</p> 
+       <p>Hobbi: {jakisObiekt.hobby}</p>
+      </div>
+
     </article>
   );
 };
