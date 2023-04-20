@@ -1,0 +1,15 @@
+.statisticBackgroundColor{
+background-color: blue;
+margin: 10px;
+padding: 10px;
+color: white;
+}
+.button{
+    background-color: grey;
+    color: white;
+}
+.divWItem{
+    background-color: gray;
+    padding: 5px;
+    margin: 5px;
+}
