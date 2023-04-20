@@ -23,4 +23,5 @@
 .przekreslonyTekst {
   text-decoration: line-through;
   color: black;
+  padding: 10px;
 }
