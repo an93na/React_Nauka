@@ -2,7 +2,7 @@ import React from "react";
 import "./StyleCSS.css";
 
 export const StyleCSS = () => {
-  const zmienna = "moja-klasa";
+  const zmienna = "mojaKlasa";
   return (
     <article className={zmienna}>
       StyleCSS

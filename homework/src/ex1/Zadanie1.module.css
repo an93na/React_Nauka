@@ -1,0 +1,26 @@
+.mainContainer {
+  background-color: bisque;
+}
+.naglowek {
+  color: violet;
+  text-align: center;
+}
+.typowySpan {
+  text-align: left;
+  color: red;
+  font-weight: bold;
+  display: inline;
+  padding: 10px;
+}
+.oscylowanyParagraf {
+  background-color: pink;
+  border-radius: 5px;
+  border: solid 1px red;
+  color: black;
+  display: inline;
+  padding: 10px;
+}
+.przekreslonyTekst {
+  text-decoration: line-through;
+  color: black;
+}
