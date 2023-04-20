@@ -2,7 +2,7 @@ import React from 'react'
 
 export const StyleInLine = () => {
     const id = 'jakiś string'
-    const objectWithStyles = {backgroundColor : 'pink'}
+    const objectWithStyles = {backgroundColor: 'pink'}
 
     return (
         <article
