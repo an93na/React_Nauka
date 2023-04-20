@@ -8,6 +8,8 @@ import { Zadanie1 } from './ex1/Zadanie1';
 import { Zadanie2 } from './ex1/Zadanie2';
 import { Zadanie3 } from './ex1/Zadanie3';
 import { Zadanie4 } from './ex1/Zadanie4';
+import { Relacje } from './ex2/Relacje';
+
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
       <Zadanie2/>
       <Zadanie3/>
       <Zadanie4/>
+      <Relacje/>
     </div>
     
   );

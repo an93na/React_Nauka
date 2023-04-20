@@ -4,7 +4,8 @@
 
 .wierzchTlo {
   background-color: rgb(248, 196, 51);
-
+  background-image: url("./teczka.png");
+  background-repeat:repeat;
   height: 150px;
   width: 250px;
   border-radius: 10px;
@@ -25,7 +26,7 @@
 }
 .liczba {
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 300;
   padding: 10px;
   margin: 5px;
 }
