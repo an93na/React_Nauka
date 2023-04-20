@@ -62,7 +62,7 @@ export const KomponentFunkcyjny = () => {
        <p>Imie: {jakisObiekt.name}</p> 
        <p>Wiek: {jakisObiekt.age}</p> 
        <p>Nazwisko: {jakisObiekt.job}</p> 
-       <p>Hobbi: {jakisObiekt.hobby}</p>
+       <p>Hobby: {jakisObiekt.hobby}</p>
       </div>
       <input type="text" placeholder='wpisz coś'></input>
       <button>klick</button>
