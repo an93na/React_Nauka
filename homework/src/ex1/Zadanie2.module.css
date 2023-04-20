@@ -1,0 +1,12 @@
+.zadaniaDoZrobienia{
+ font-weight: bold;
+}
+.zielonaKlasa{
+    color: green;
+}
+.niebieskaKlasa{
+    color: blue;
+}
+.przekreslonyTekst{
+    text-decoration: line-through;
+}
