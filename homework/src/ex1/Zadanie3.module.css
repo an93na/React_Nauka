@@ -1,0 +1,30 @@
+.kolkoNiebieskie{
+    background-color: blue;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: bottom;
+    line-height: 50px;
+}
+.kolkoZielone{
+    display: inline-block;
+    background-color: green;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    vertical-align: bottom;
+    line-height: 75px; 
+}
+.kolkoCzerwone{
+    background-color: red;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: 100px;
+}

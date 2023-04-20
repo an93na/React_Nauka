@@ -6,6 +6,7 @@ import { StyleCSS } from './ex1/StyleCSS';
 import { StyleCSSModules } from './ex1/StyleCSSModules';
 import { Zadanie1 } from './ex1/Zadanie1';
 import { Zadanie2 } from './ex1/Zadanie2';
+import { Zadanie3 } from './ex1/Zadanie3';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <StyleCSSModules/>
       <Zadanie1/>
       <Zadanie2/>
+      <Zadanie3/>
     </div>
     
   );
