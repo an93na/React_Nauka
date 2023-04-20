@@ -1,7 +1,13 @@
 import React from "react";
-
+import "./StyleCSS.css"
 
 
 export const StyleCSS = () => {
-  return <article>StyleCSS</article>;
+    const zmienna = "moja-klasa"
+  return <article className={zmienna}>
+    StyleCSS
+    <div className="klasyczna-klasa">
+        div z klasycznie przypisaną klasą
+    </div>
+    </article>;
 };
