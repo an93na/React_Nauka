@@ -1,0 +1,13 @@
+.profile {
+    background-image: linear-gradient(to bottom, white 50%, blue 50%);
+    width: 380px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+  }
