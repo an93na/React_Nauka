@@ -3,7 +3,5 @@ import classes from "./allStyles.module.css"
 
 
 export const Logo = () =>{
-    return <div>
-
-    </div>
+    return <div className={classes.logo}></div>
 }
