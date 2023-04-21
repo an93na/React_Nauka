@@ -3,7 +3,7 @@ import classes from "./allStyles.module.css";
 
 export const Metric = () => {
   return (
-    <div style={{display:'flex'}}>
+    <div style={{display:'flex', marginBottom:0}}>
       <div className={classes.metrics}>
         <p className={classes.liczbaF}><b>80K</b></p><p>Followers</p>
       </div>
