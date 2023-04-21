@@ -11,3 +11,11 @@
     align-items: center;
     font-family: Arial;
   }
+  .logo {
+    border: solid 5px grey;
+    background-color: pink;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+  }
