@@ -5,13 +5,13 @@ export const Metric = () => {
   return (
     <div style={{display:'flex'}}>
       <span className={classes.metrics}>
-        <p>80K Followers</p>
+        <p><b>80K</b> Followers</p>
       </span>
       <span className={classes.metrics}>
-        <p>803K Likes</p>
+        <p><b>803K</b> Likes</p>
       </span>
       <span className={classes.metrics}>
-        <p>1.4K Photos</p>
+        <p><b>1.4K</b> Photos</p>
       </span>
     </div>
   );

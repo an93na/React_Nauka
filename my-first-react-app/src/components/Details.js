@@ -3,7 +3,7 @@ import classes from "./allStyles.module.css"
 
 
 export const Deatils = () =>{
-    return <div className={classes.details}>
+    return <div className={classes.details} style={{display:"flex", flexDirection: "column"}}>
         <p className={classes.przerwa}><b>Victor Crest</b> 26</p><p>London</p>
     </div>
 }
