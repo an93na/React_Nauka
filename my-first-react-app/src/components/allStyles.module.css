@@ -12,7 +12,7 @@
     font-family: Arial;
   }
   .logo {
-    border: solid 5px grey;
+    border: solid 5px palevioletred;
     background-color: pink;
     border-radius: 50%;
     height: 100px;
@@ -27,12 +27,12 @@
     
   }
   .metrics {
-    padding: 10px;
+    padding: 5px;
     border: 1px solid grey;
     margin: 5px;
-    align-items: center;
-    justify-content: center;
     text-align: center;
+    color: black;
+    width: 100px
   }
   .przerwa {
     text-align: center;
@@ -42,5 +42,10 @@
     font-size: 25px;
   }
   .London {
-    
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .liczbaF {
+    color: black;
+    font-size: 20px;
+    text-align: center;
   }
