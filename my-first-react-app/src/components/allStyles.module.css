@@ -22,3 +22,11 @@
   .details {
     text-align: center;
   }
+  .metrics {
+    padding: 10px;
+    border: 1px solid grey;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
