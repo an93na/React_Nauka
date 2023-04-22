@@ -4,5 +4,5 @@ import logo from "./1.jpg"
 
 
 export const Logo = () =>{
-    return <div className={classes.logo}></div>
+    return <img src={logo} alt="logo" className={classes.logo}/>
 }
