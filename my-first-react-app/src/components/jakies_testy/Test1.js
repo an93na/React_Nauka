@@ -23,6 +23,11 @@ export const Test1 = () => {
           Age: <b>{user.age}</b>
         </li>
       </ul>
+      <h4>Zadania:</h4>
+      <ul style={{ textAlign: "left" }}>
+        <li>Name: {zad.name}</li>
+        <li>Piorytet: {zad.priority}</li>
+      </ul>
     </div>
   );
 };
