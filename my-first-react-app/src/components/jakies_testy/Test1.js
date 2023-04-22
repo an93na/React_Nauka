@@ -12,9 +12,10 @@ export const Test1 = () => {
     const [zad, setZad] = useState(TODO);
 
     return (
-        <article>
+        <div>
             <h3>Wyświetl Stan</h3>
             <h4>User:</h4>
-        </article>
+            
+        </div>
     )
 }
