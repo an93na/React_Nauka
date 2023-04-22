@@ -6,6 +6,8 @@ export const Test2 = () => {
 
   const wylSubmit = (event) => {
     event.preventDefault();
+    setNumber1((Number(number2)));
+    setNumber2('');
   };
 
   return (
@@ -24,6 +26,8 @@ export const Test2 = () => {
 
       <form onSubmit={wylSubmit}>
         <input
+          type="text"
+          placeholder="wprowadź liczbę"
           value={number2}
           onChange={({ target }) => setNumber2(target.value)}
         />
