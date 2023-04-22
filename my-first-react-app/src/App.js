@@ -5,7 +5,7 @@ import { Profile } from "./components/Profile";
 
 function App() {
   return (
-    <article style={{margin:"50px"}}>
+    <article className="App" style={{margin:"50px"}}>
       <Profile/>
     </article>
   );
