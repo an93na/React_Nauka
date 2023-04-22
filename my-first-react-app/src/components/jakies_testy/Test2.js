@@ -10,8 +10,7 @@ export const Test2 = () => {
       <p>Wartość początkowa: {number1}</p>
       <button
         onClick={() => {
-          const newNumber1 = number1 + 2;
-          setNumber1(newNumber1);
+          setNumber1((prevNum1)=> prevNum1+2);
         }}
       >
         +2
