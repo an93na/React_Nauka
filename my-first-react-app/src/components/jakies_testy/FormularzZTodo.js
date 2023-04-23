@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 
+const TASKS = [{ title: "Zrobić pranie", priority: "low", id: 92 }];
+
 export const FormularzZTodo = () => {
   const [title, setTitle] = useState("");
   const [priority, setPriority] = useState("");
+  const [tasks, setTasks] = useState(TASKS);
 
   const onSubmitPreventDefault = (event) => {
     event.preventDefault();
@@ -42,6 +45,11 @@ export const FormularzZTodo = () => {
             <th>ID</th>
           </tr>
         </thead>
+        <tbody>
+          {tasks.map((task) => {
+            return <tr key={task.id}></tr>;
+          })}
+        </tbody>
       </table>
     </div>
   );
