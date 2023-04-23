@@ -11,6 +11,7 @@ export const FormularzZTodo = () => {
   return (
     <div>
       <h3>Lista rzeczy</h3>
+      <div style={{display:"flex", gap: 5}}>
       <form onSubmit={onSubmitPreventDefault}></form>
       <input
         type="text"
@@ -23,6 +24,8 @@ export const FormularzZTodo = () => {
         <option value={'Medium'}>Medium</option>
         <option value={'Low'}>Low</option>
       </select>
+      <button type="submit">Submit</button>
+      </div>
     </div>
   );
 };
