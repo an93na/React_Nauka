@@ -47,7 +47,14 @@ export const FormularzZTodo = () => {
         </thead>
         <tbody>
           {tasks.map((task) => {
-            return <tr key={task.id}></tr>;
+            return <tr key={task.id}>
+                <td>{task.title}</td>
+                <td>{task.priority}</td>
+                <td>{task.id}</td>
+                <td>
+                    <button></button>
+                </td>
+            </tr>;
           })}
         </tbody>
       </table>
