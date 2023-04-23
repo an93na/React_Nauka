@@ -33,6 +33,16 @@ export const FormularzZTodo = () => {
         </select>
         <button type="submit">Submit</button>
       </form>
+      <table>
+        <thead>
+          <tr>
+            {" "}
+            <th>Title</th>
+            <th>Priority</th>
+            <th>ID</th>
+          </tr>
+        </thead>
+      </table>
     </div>
   );
 };
