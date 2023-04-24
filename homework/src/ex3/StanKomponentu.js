@@ -10,19 +10,30 @@ export const StanKomponentu = () => {
     street: "Błękitna",
     postalCode: 11111,
   });
-  setTimeout(() => {
-    setState("koniec Testu");
-  }, 3000);
 
-  setTimeout(() => {
-    // nowy obiekt jako nowy stan
-    // const newAddress = { city: "Gdańsk", street: " Dluga", postalCode: 88888 };
-    // setAddress(newAddress);
+  const [users, setUsers] = useState(["Janek ", "Joasia ", "Basia "]);
 
-    // aktualizacja stanu poprzedniego
-    setAddress((prevState) => ({...prevState, street: 'Armi Krajowej'}))
+  //   setTimeout(() => {
+  //     setState("koniec Testu");
+  //   }, 3000);
 
-  }, 5000);
+  //   setTimeout(() => {
+  //     // nowy obiekt jako nowy stan
+  //     // const newAddress = { city: "Gdańsk", street: " Dluga", postalCode: 88888 };
+  //     // setAddress(newAddress);
+
+  //     // aktualizacja stanu poprzedniego
+  //     setAddress((prevState) => ({...prevState, street: 'Armi Krajowej'}))
+
+  //     // setUsers((prevUsers) => ([...prevUsers, ' Luka']));
+
+  //   }, 5000);
+
+  const [number1] = useState(10);
+  const [number2] = useState(15);
+
+  const sum = number1 + number2;
+
   return (
     <article>
       <h4>Stan Komponentu</h4>
@@ -45,6 +56,11 @@ export const StanKomponentu = () => {
       <p>
         Street: <b>{address.postalCode}</b>
       </p>
+
+      <p>
+        Users: <b>{users}</b>
+      </p>
+      <p>Wynik dodawania liczby {number1} i {number2} = {sum}</p>
     </article>
   );
 };
