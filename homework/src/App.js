@@ -15,6 +15,7 @@ import { Zadanie6 } from './ex2/Zadanie6';
 import { Zadanie7 } from './ex2/Zadanie7';
 import { Assets } from './ex3/Asset';
 import { StanKomponentu } from './ex3/StanKomponentu';
+import { Eventy } from './ex3/Eventy';
 
 
 
@@ -36,6 +37,7 @@ function App() {
       <Zadanie7 />
       <Assets />
       <StanKomponentu />
+      <Eventy />
     </div>
     
   );
