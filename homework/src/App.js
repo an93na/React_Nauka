@@ -13,6 +13,7 @@ import { RelacjeRozsz } from './ex2/Relacje_relacje';
 import { Zdanie5 } from './ex2/Zadanie5';
 import { Zadanie6 } from './ex2/Zadanie6';
 import { Zadanie7 } from './ex2/Zadanie7';
+import { Assets } from './ex3/Asset';
 
 
 
@@ -32,6 +33,7 @@ function App() {
       <Zdanie5 />
       <Zadanie6 />
       <Zadanie7 />
+      <Assets />
     </div>
     
   );
