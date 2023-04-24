@@ -5,11 +5,24 @@ export const StanKomponentu = () => {
   const [name, setName] = useState("Krzyś");
   const [lastName, setLastName] = useState("Koper");
   const [age, setAge] = useState(27);
-
+  const [address, setAddress] = useState({
+    city: "Łódź",
+    street: "Błękitna",
+    postalCode: 11111,
+  });
   setTimeout(() => {
     setState("koniec Testu");
   }, 3000);
 
+  setTimeout(() => {
+    // nowy obiekt jako nowy stan
+    // const newAddress = { city: "Gdańsk", street: " Dluga", postalCode: 88888 };
+    // setAddress(newAddress);
+
+    // aktualizacja stanu poprzedniego
+    setAddress((prevState) => ({...prevState, street: 'Armi Krajowej'}))
+
+  }, 5000);
   return (
     <article>
       <h4>Stan Komponentu</h4>
@@ -20,7 +33,18 @@ export const StanKomponentu = () => {
       <p>
         Last name: <b>{lastName}</b>
       </p>
-      <p>Age: <b>{age}</b></p>
+      <p>
+        Age: <b>{age}</b>
+      </p>
+      <p>
+        City: <b>{address.city}</b>
+      </p>
+      <p>
+        Street: <b>{address.street}</b>
+      </p>
+      <p>
+        Street: <b>{address.postalCode}</b>
+      </p>
     </article>
   );
 };
