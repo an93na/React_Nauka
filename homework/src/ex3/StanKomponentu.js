@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { WyswietlStan } from "./zad1";
 
 export const StanKomponentu = () => {
   const [state, setState] = useState("test");
@@ -61,6 +62,7 @@ export const StanKomponentu = () => {
         Users: <b>{users}</b>
       </p>
       <p>Wynik dodawania liczby {number1} i {number2} = {sum}</p>
+      <WyswietlStan/>
     </article>
   );
 };
