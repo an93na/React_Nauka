@@ -6,7 +6,7 @@ export const Counter = () => {
   return (
     <div style={{ padding: 15, backgroundColor: "bisque", color: "black" }}>
       Counter
-      <p>Counter value: {counter} </p>
+      <p style={{ border: "solid 2px red" }}>Counter value: {counter} </p>
       <div style={{ display: "flex", gap: 15 }}>
         <button onClick={() => setCounter((prevCounter) => prevCounter + 1)}>
           +1
@@ -22,9 +22,16 @@ export const Counter = () => {
       <form
         onSubmit={(event) => {
           event.preventDefault();
+          setCounter(Number(customCounter));
+          setCustomCounter('')
         }}
       >
-        <input value={customCounter} onChange={(event)=>setCustomCounter(event.target.value)} type="text" placeholder="Wpisz wartość" />
+        <input
+          value={customCounter}
+          onChange={(event) => setCustomCounter(event.target.value)}
+          type="text"
+          placeholder="Wpisz wartość"
+        />
         <button type="submit">Submit</button>
       </form>
     </div>
