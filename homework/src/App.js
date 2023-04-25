@@ -18,6 +18,7 @@ import { StanKomponentu } from './ex3/StanKomponentu';
 import { Eventy } from './ex3/Eventy';
 import { ZadCom1 } from './ex3/zadCom1';
 import { ZadCom2 } from './ex3/zadCom2';
+import { ZadCom3 } from './ex3/ZadCom3';
 
 
 
@@ -42,6 +43,7 @@ function App() {
       <Eventy />
       <ZadCom1/>
       <ZadCom2/>
+      <ZadCom3/>
     </div>
     
   );
