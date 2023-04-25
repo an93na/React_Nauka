@@ -11,11 +11,20 @@ export const Eventy = () => {
   return (
     <article>
       <h3>Events</h3>
-      <input type="text" value={tekstInputValue} onChange={(event) => {
-        // console.log(event)
-        setTekstInputValue(event.target.value)}} />
+      <input
+        type="text"
+        value={tekstInputValue}
+        onChange={(event) => {
+          // console.log(event)
+          setTekstInputValue(event.target.value);
+        }}
+      />
 
-        <input type="text" value={tekstInputValue2} onChange={(event) => setTekstInputValue2(event.target.value)}/>
+      <input
+        type="text"
+        value={tekstInputValue2}
+        onChange={(event) => setTekstInputValue2(event.target.value)}
+      />
       <button
         onClick={() => {
           console.log("Hello word");
@@ -24,8 +33,9 @@ export const Eventy = () => {
       >
         {label}
       </button>
-      <Counter/>
-      <Formularz/>
+      <h2>{tekstInputValue2}</h2>
+      <Counter />
+      <Formularz />
     </article>
   );
 };
