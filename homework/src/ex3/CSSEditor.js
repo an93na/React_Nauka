@@ -27,6 +27,7 @@ export const CSSEditor = () => {
   const [justifyContentValue, setJustifyContentValue] = useState("flex-start");
   const [borderRadious, setBorderRadious] = useState("flex-start");
   const [kolor, setKolor] = useState("black");
+  const [ramka, setRamka] = useState('pink');
 
   const handleRadioButtonChange = (e) => {
     setJustifyContentValue(e.target.value);
@@ -110,14 +111,21 @@ export const CSSEditor = () => {
           }}
         ></div>
       </div>
-      
+
       <input type="color" onChange={(event) => setKolor(event.target.value)} />
       <input type="range" min={0} max={100} step={10} />
+        <select name="" id="" value={ramka} onChange={(e) => setRamka(e.target.value)}>
+        <option value="" hidden>Select border color</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+
+      </select>
       <div
         style={{
-          height: 50,
-          width: 50,
-          border: "solid 5px red",
+          height: 100,
+          width: 100,
+          border: `solid 5px ${ramka}`,
           background: kolor,
         }}
       ></div>
