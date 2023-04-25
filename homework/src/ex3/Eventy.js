@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Counter } from "./components/Counter";
+import { Formularz } from "./components/Formularz";
 
 export const Eventy = () => {
   const [state, setState] = useState([]);
@@ -24,6 +25,7 @@ export const Eventy = () => {
         {label}
       </button>
       <Counter/>
+      <Formularz/>
     </article>
   );
 };
