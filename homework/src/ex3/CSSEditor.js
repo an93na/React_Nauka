@@ -25,6 +25,8 @@ import React, { useState } from "react";
 export const CSSEditor = () => {
   const [backgroundColor, setBackgroundColor] = useState("green");
   const [justifyContentValue, setJustifyContentValue] = useState("flex-start");
+  const [borderRadious, setBorderRadious] = useState("flex-start");
+  const [kolor, setKolor] = useState("black");
 
   const handleRadioButtonChange = (e) => {
     setJustifyContentValue(e.target.value);
@@ -46,10 +48,6 @@ export const CSSEditor = () => {
         <option value="Green">Green</option>
         <option value="Blue">Blue</option>
       </select>
-
-      <input type="color" onChange={(event) => ({})} />
-
-      <input type="range" min={0} max={100} step={10} />
 
       <label>
         <input
@@ -80,7 +78,19 @@ export const CSSEditor = () => {
         />{" "}
         Flex-end
       </label>
-
+      <select
+        name=""
+        id=""
+        value={borderRadious}
+        onChange={(e) => setBorderRadious(e.target.value)}
+      >
+        <option value="" hidden>
+          Wybierz zaokrąglenie
+        </option>
+        <option value="5px">5px</option>
+        <option value="20px">20px</option>
+        <option value="50%">50%</option>
+      </select>
       <b style={{ marginTop: 30, display: "block" }}>Preview</b>
       <div
         style={{
@@ -92,9 +102,25 @@ export const CSSEditor = () => {
         }}
       >
         <div
-          style={{ width: 100, height: 100, background: backgroundColor }}
+          style={{
+            width: 100,
+            height: 100,
+            background: backgroundColor,
+            borderRadius: borderRadious,
+          }}
         ></div>
       </div>
+      
+      <input type="color" onChange={(event) => setKolor(event.target.value)} />
+      <input type="range" min={0} max={100} step={10} />
+      <div
+        style={{
+          height: 50,
+          width: 50,
+          border: "solid 5px red",
+          background: kolor,
+        }}
+      ></div>
     </article>
   );
 };
