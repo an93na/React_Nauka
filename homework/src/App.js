@@ -19,6 +19,7 @@ import { Eventy } from './ex3/Eventy';
 import { ZadCom1 } from './ex3/zadCom1';
 import { ZadCom2 } from './ex3/zadCom2';
 import { ZadCom3 } from './ex3/ZadCom3';
+import { ZadCom4 } from './ex3/ZadCom4';
 
 
 
@@ -44,6 +45,7 @@ function App() {
       <ZadCom1/>
       <ZadCom2/>
       <ZadCom3/>
+      <ZadCom4/>
     </div>
     
   );
