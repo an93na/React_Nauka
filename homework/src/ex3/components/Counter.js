@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 export const Counter = () => {
   const [counter, setCounter] = useState(0);
+  const [customCounter, setCustomCounter] = useState("");
   return (
     <div style={{ padding: 15, backgroundColor: "bisque", color: "black" }}>
       Counter
@@ -17,6 +18,15 @@ export const Counter = () => {
           +5
         </button>
       </div>
+      <h4>Formularz</h4>
+      <form
+        onSubmit={(event) => {
+          event.preventDefault();
+        }}
+      >
+        <input value={customCounter} onChange={(event)=>setCustomCounter(event.target.value)} type="text" placeholder="Wpisz wartość" />
+        <button type="submit">Submit</button>
+      </form>
     </div>
   );
 };
