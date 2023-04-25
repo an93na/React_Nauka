@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Counter } from "./components/Counter";
 
 export const Eventy = () => {
   const [state, setState] = useState([]);
@@ -22,6 +23,7 @@ export const Eventy = () => {
       >
         {label}
       </button>
+      <Counter/>
     </article>
   );
 };
