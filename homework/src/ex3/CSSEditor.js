@@ -34,6 +34,10 @@ export const CSSEditor = () => {
   const handleRadioButtonChange = (e) => {
     setJustifyContentValue(e.target.value);
   };
+  const handleRadioButtonChange1 = (e) => {
+    setPolozenie(e.target.value);
+    // console.log(e.target.value)
+  };
 
   const KsztaltOstatecznie = (kszt) => {
     if (kszt < 25) {
@@ -147,14 +151,43 @@ export const CSSEditor = () => {
         <option value="green">Green</option>
         <option value="blue">Blue</option>
       </select>
-      <div style={{ display: "flex", border: "solid 3px red", padding: 20 }}>
+      <label>
+        <input
+          type="radio"
+          name="flex1"
+          value="flex-start"
+          onChange={handleRadioButtonChange1}
+        />
+        Flex start
+      </label>
+      <label>
+        <input
+          type="radio"
+          name="flex1"
+          value="center"
+          onChange={handleRadioButtonChange1}
+        />
+        Center
+      </label>
+      <label>
+        <input
+          type="radio"
+          name="flex1"
+          value="flex-end"
+          onChange={handleRadioButtonChange1}
+        />
+        Flex end
+      </label>
+
+      <div style={{ display: "flex", justifyContent: polozenie, border: "solid 3px red", padding: 20 }}>
+        
         <div
           style={{
             height: 100,
             width: 100,
             border: `solid 5px ${ramka}`,
             background: kolor,
-            borderRadius: {resultat},
+            borderRadius: resultat,
           }}
         ></div>
       </div>
