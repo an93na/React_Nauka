@@ -21,6 +21,7 @@ import { ZadCom2 } from './ex3/zadCom2';
 import { ZadCom3 } from './ex3/ZadCom3';
 import { ZadCom4 } from './ex3/ZadCom4';
 import { CSSEditor } from './ex3/CSSEditor';
+import { CSSEditor1 } from './ex3/problem';
 
 
 
@@ -47,7 +48,8 @@ function App() {
       <ZadCom2/>
       <ZadCom3/>
       <ZadCom4/>
-      <CSSEditor/>
+      {/* <CSSEditor/> */}
+      <CSSEditor1/>
     </div>
     
   );
