@@ -27,11 +27,26 @@ export const CSSEditor = () => {
   const [justifyContentValue, setJustifyContentValue] = useState("flex-start");
   const [borderRadious, setBorderRadious] = useState("flex-start");
   const [kolor, setKolor] = useState("black");
-  const [ramka, setRamka] = useState('pink');
+  const [ramka, setRamka] = useState("pink");
+  const [polozenie, setPolozenie] = useState("flex-start");
+  const [ksztalt, setKsztalt] = useState("0");
 
   const handleRadioButtonChange = (e) => {
     setJustifyContentValue(e.target.value);
   };
+
+  const KsztaltOstatecznie = (kszt) => {
+    if (kszt < 25) {
+      return "10px";
+    } else if (kszt >= 25 && kszt < 50) {
+      return "20px";
+    } else if (kszt >= 50) {
+      return "50%";
+    }
+  };
+
+  const resultat = KsztaltOstatecznie(ksztalt);
+  console.log(resultat);
 
   return (
     <article>
@@ -113,22 +128,36 @@ export const CSSEditor = () => {
       </div>
 
       <input type="color" onChange={(event) => setKolor(event.target.value)} />
-      <input type="range" min={0} max={100} step={10} />
-        <select name="" id="" value={ramka} onChange={(e) => setRamka(e.target.value)}>
-        <option value="" hidden>Select border color</option>
+      <input
+        type="range"
+        min={0}
+        max={100}
+        onChange={(e) => setKsztalt(e.target.value)}
+      />
+      <select
+        name=""
+        id=""
+        value={ramka}
+        onChange={(e) => setRamka(e.target.value)}
+      >
+        <option value="" hidden>
+          Select border color
+        </option>
         <option value="red">Red</option>
         <option value="green">Green</option>
         <option value="blue">Blue</option>
-
       </select>
-      <div
-        style={{
-          height: 100,
-          width: 100,
-          border: `solid 5px ${ramka}`,
-          background: kolor,
-        }}
-      ></div>
+      <div style={{ display: "flex", border: "solid 3px red", padding: 20 }}>
+        <div
+          style={{
+            height: 100,
+            width: 100,
+            border: `solid 5px ${ramka}`,
+            background: kolor,
+            borderRadius: {resultat},
+          }}
+        ></div>
+      </div>
     </article>
   );
 };
