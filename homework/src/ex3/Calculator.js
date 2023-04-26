@@ -7,14 +7,18 @@ export const Calculator = () => {
 
   const rezulat = (n1, n2, op) => {
     if (op === "+") {
-      return n1 + n2;
-    } else if (op === "-") {
-      return n1 - n2;
-    } else if (op === "*") {
-      return n1 * n2;
-    } else if (op === "-") {
-      return n1 * n2;
+      return Number(n1) + Number(n2);
+    } 
+    if (op === "-") {
+      return Number(n1) - Number(n2);
+    } 
+    if (op === "*") {
+      return Number(n1) * Number(n2);
+    } 
+    if (op === "/") {
+      return Number(n1) / Number(n2);
     }
+    return ""
   };
 
   const rozwiązanie = rezulat(number1, number2, operation);
@@ -45,7 +49,7 @@ export const Calculator = () => {
           value={number2}
           onChange={(e) => setNumber2(e.target.value)}
         />
-        <input type="text" readOnly />
+        <input type="text" readOnly value={rozwiązanie}/>
       </div>
     </article>
   );
