@@ -50,7 +50,7 @@ export const CSSEditor = () => {
   };
 
   const resultat = KsztaltOstatecznie(ksztalt);
-  console.log(resultat);
+  // console.log(resultat);
 
   return (
     <article>
