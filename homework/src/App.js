@@ -27,6 +27,7 @@ import { Props } from './ex3/Props';
 import { PropsFunkcje } from './ex3/PropsFunkcje';
 import { Parent1 } from './ex3/ZadChlPr1';
 import { Parent2 } from './ex3/ZadChlPr2';
+import { Parent3 } from './ex3/ZadChlPr3';
 
 
 
@@ -60,6 +61,7 @@ function App() {
       <PropsFunkcje/>
       <Parent1/>
       <Parent2/>
+      <Parent3/>
     </div>
     
   );
