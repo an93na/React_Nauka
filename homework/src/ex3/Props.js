@@ -15,6 +15,14 @@ const ComponentWithPropsLi = (props) => {
     </li>
   );
 };
+const ComponentWithObjectAsProps = (props) => {
+  const {user} = props;
+    return (
+    <li>
+      {user.name} <b>{user.lastName}</b>
+    </li>
+  );
+};
 
 export const Props = () => {
   const [num] = useState(10);
@@ -41,6 +49,9 @@ export const Props = () => {
           lastName={users[1].lastName}
         />
       </ul>
+      <ol>
+        <ComponentWithObjectAsProps user={users[0]}/>
+      </ol>
     </article>
   );
 };
