@@ -9,9 +9,9 @@ export const CounterWithProps = () => {
   return (
     <article>
       <p>Counter with props</p>
-      <IncreaseButton />
-      <Output />
-      <DecreaseButton />
+      <IncreaseButton onIcreaseClick={() => setCounter(counter + 1)} />
+      <Output value={counter} />
+      <DecreaseButton onDecreaseClick={() => setCounter(counter - 1)} />
     </article>
   );
 };

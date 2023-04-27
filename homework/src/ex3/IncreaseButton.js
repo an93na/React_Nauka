@@ -1,5 +1,5 @@
 import React from "react";
 
 export const IncreaseButton = (props) => {
-  return <button>+1</button>;
+  return <button onClick={props.onIcreaseClick}>+1</button>;
 };

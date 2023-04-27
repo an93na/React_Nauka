@@ -1,7 +1,7 @@
 import React from "react";
 
 export const DecreaseButton = (props) => {
-  return <button>-1</button>;
+  return <button onClick={props.onDecreaseClick}>-1</button>;
 };
 
 
