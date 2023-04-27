@@ -24,6 +24,7 @@ import { CSSEditor } from './ex3/CSSEditor';
 import { Calculator } from './ex3/Calculator';
 import { Form } from './ex3/Form';
 import { Props } from './ex3/Props';
+import { PropsFunkcje } from './ex3/PropsFunkcje';
 
 
 
@@ -54,6 +55,7 @@ function App() {
       <Calculator/>
       <Form/>
       <Props/>
+      <PropsFunkcje/>
     </div>
     
   );
