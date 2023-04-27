@@ -22,6 +22,7 @@ import { ZadCom3 } from './ex3/ZadCom3';
 import { ZadCom4 } from './ex3/ZadCom4';
 import { CSSEditor } from './ex3/CSSEditor';
 import { Calculator } from './ex3/Calculator';
+import { Form } from './ex3/Form';
 
 
 
@@ -50,6 +51,7 @@ function App() {
       <ZadCom4/>
       <CSSEditor/>
       <Calculator/>
+      <Form/>
     </div>
     
   );
