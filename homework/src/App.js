@@ -28,6 +28,8 @@ import { PropsFunkcje } from './ex3/PropsFunkcje';
 import { Parent1 } from './ex3/ZadChlPr1';
 import { Parent2 } from './ex3/ZadChlPr2';
 import { Parent3 } from './ex3/ZadChlPr3';
+import { Parent4 } from './ex3/ZadChlPr4';
+import { CounterWithProps } from './ex3/CounterWithProps';
 
 
 
@@ -62,6 +64,8 @@ function App() {
       <Parent1/>
       <Parent2/>
       <Parent3/>
+      <Parent4/>
+      <CounterWithProps/>
     </div>
     
   );
