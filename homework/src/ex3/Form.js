@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export const Form = () => {
   const [title, setTitle] = useState("");
   const [priority, setPriority] = useState("");
-  const [task, setTask] = useState("");
+  const [task, setTask] = useState([]);
 
   const defSubmit = (e) => {
     e.preventDefault();
