@@ -25,6 +25,8 @@ import { Calculator } from './ex3/Calculator';
 import { Form } from './ex3/Form';
 import { Props } from './ex3/Props';
 import { PropsFunkcje } from './ex3/PropsFunkcje';
+import { Parent1 } from './ex3/ZadChlPr1';
+import { Parent2 } from './ex3/ZadChlPr2';
 
 
 
@@ -56,6 +58,8 @@ function App() {
       <Form/>
       <Props/>
       <PropsFunkcje/>
+      <Parent1/>
+      <Parent2/>
     </div>
     
   );

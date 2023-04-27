@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import obrazek from "./1.jpg";
+// import obrazek from "./1.jpg";
 
 const CounterControler = (props) => {
   return (
@@ -24,7 +24,7 @@ const MojaSuperFunkcja = (props) => {
 
 export const PropsFunkcje = () => {
   const [counter, setCounter] = useState(0);
-  const [img, setImg] = useState('');
+  // const [img, setImg] = useState('');
 
   const handleDecreaseClick = () => {
     setCounter(counter - 1);
