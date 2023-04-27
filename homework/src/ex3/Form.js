@@ -1,16 +1,23 @@
 import React, { useState } from "react";
 
 export const Form = () => {
-  const [task, setTask] = useState();
+  const [title, setTitle] = useState();
   const [priority, setPriority] = useState();
 
   return (
     <article>
       <h4>Form</h4>
-      <form>
-        <input type="text" name="" id="" placeholder="Task title" />
-        <input type="text" name="" id="" placeholder="Select priority" />
-        <button>Submit</button>
+      <form onSubmit={(e)=>{
+        e.preventDefault()
+      }}>
+        <input type="text" name="" id="" placeholder="Task title..." value={title} onChange={(e)=>setTitle(e.target.value)}/>
+        <select name="" id="" onChange={(e)=>setPriority(e.target.value)}>
+            <option value="" hidden>Select priority</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+        <button type="submit">Submit</button>
       </form>
     </article>
   );
