@@ -40,13 +40,19 @@ export const CSSEditor = () => {
   };
 
   const KsztaltOstatecznie = (kszt) => {
-    if (kszt < 25) {
-      return "10px";
-    } else if (kszt >= 25 && kszt < 50) {
-      return "20px";
-    } else if (kszt >= 50) {
-      return "50%";
+    let wyniczek = 0
+    for (let i=0; i<kszt; i++){
+    wyniczek = i
     }
+    // if (kszt < 25) {
+    //   return "10px";
+    // } else if (kszt >= 25 && kszt < 50) {
+    //   return "20px";
+    // } else if (kszt >= 50) {
+    //   return "50%";
+    // }
+    // console.log(wyniczek)
+    return wyniczek
   };
 
   const resultat = KsztaltOstatecznie(ksztalt);
@@ -135,7 +141,7 @@ export const CSSEditor = () => {
       <input
         type="range"
         min={0}
-        max={100}
+        max={52}
         onChange={(e) => setKsztalt(e.target.value)}
       />
       <select
