@@ -24,6 +24,10 @@ const ComponentWithObjectAsProps = (props) => {
   );
 };
 
+const BooleanComponent = (props) => {
+    return props.showUnorderdList ? <ul><li>UnorderedList</li></ul> :<ol><li>OrderedList</li></ol>
+}
+
 export const Props = () => {
   const [num] = useState(10);
   const users = [
@@ -52,6 +56,10 @@ export const Props = () => {
       <ol>
         <ComponentWithObjectAsProps user={users[0]}/>
       </ol>
+      <h4>Listy i boolean props</h4>
+      <BooleanComponent showUnorderdList/>
+      <BooleanComponent showUnorderdList = {true}/>
+      <BooleanComponent showUnorderdList = {false}/>
     </article>
   );
 };
