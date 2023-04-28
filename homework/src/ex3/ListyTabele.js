@@ -39,6 +39,7 @@ export const ListyTabele = () => {
             <option value="medium">Medium</option>
             <option value="low">Low</option>
         </select>
+        <button type="submit">Submit</button>
       </form>
       <table>
         <thead>
