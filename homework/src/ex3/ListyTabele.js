@@ -43,9 +43,15 @@ export const ListyTabele = () => {
           {tasks.map((task) => {
             return (
               <tr key={task.id}>
-                <th>{task.id}</th>
-                <th>{task.title}</th>
-                <th>{task.priority}</th>
+                <td>{task.id}</td>
+                <td>{task.title}</td>
+                <td>{task.priority}</td>
+                <td><button onClick={() => {
+                 const newTab = tasks.filter((taskVerify) => {
+                    return taskVerify.id !== task.id
+                 })
+                 setTasks(newTab)
+                }}>Delete</button></td>
               </tr>
             );
           })}
