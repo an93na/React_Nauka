@@ -21,6 +21,8 @@ const TASKS = [
 export const ListyTabele = () => {
   const [tasks, setTasks] = useState(TASKS);
   const tablicaStringow = ["test1", "test2", "test3"];
+  const [title, setTitle] = useState("");
+  const [priority, setPriority] = useState("");
 
   return (
     <article>
@@ -31,13 +33,37 @@ export const ListyTabele = () => {
         })}
       </ul>
 
-      <form>
-        <input type="text" placeholder="Enter title ..."/>
-        <select name="priority" id="">
-            <option value="" hidden>Select piriority</option>
-            <option value="high">High</option>
-            <option value="medium">Medium</option>
-            <option value="low">Low</option>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          const newTask = {
+            id: Math.random(),
+            title: title,
+            priority: priority,
+          };
+          setTasks([...tasks, newTask]);
+          setTitle("");
+          setPriority("");
+        }}
+      >
+        <input
+          type="text"
+          placeholder="Enter title ..."
+          value={title}
+          onChange={(event) => setTitle(event.target.value)}
+        />
+        <select
+          name="priority"
+          id=""
+          value={priority}
+          onChange={(e) => setPriority(e.target.value)}
+        >
+          <option value="" hidden>
+            Select piriority
+          </option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
         </select>
         <button type="submit">Submit</button>
       </form>
@@ -57,12 +83,18 @@ export const ListyTabele = () => {
                 <td>{task.id}</td>
                 <td>{task.title}</td>
                 <td>{task.priority}</td>
-                <td><button onClick={() => {
-                 const newTab = tasks.filter((taskVerify) => {
-                    return taskVerify.id !== task.id
-                 })
-                 setTasks(newTab)
-                }}>Delete</button></td>
+                <td>
+                  <button
+                    onClick={() => {
+                      const newTab = tasks.filter((taskVerify) => {
+                        return taskVerify.id !== task.id;
+                      });
+                      setTasks(newTab);
+                    }}
+                  >
+                    Delete
+                  </button>
+                </td>
               </tr>
             );
           })}
