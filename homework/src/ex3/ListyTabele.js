@@ -30,6 +30,16 @@ export const ListyTabele = () => {
           return <li key={element}>{element}</li>;
         })}
       </ul>
+
+      <form>
+        <input type="text" placeholder="Enter title ..."/>
+        <select name="priority" id="">
+            <option value="" hidden>Select piriority</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+      </form>
       <table>
         <thead>
           <tr>
