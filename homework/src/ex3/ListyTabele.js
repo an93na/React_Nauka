@@ -36,6 +36,7 @@ export const ListyTabele = () => {
       <form
         onSubmit={(e) => {
           e.preventDefault();
+          if(title !== '' && priority !== ''){
           const newTask = {
             id: Math.random(),
             title: title,
@@ -44,7 +45,7 @@ export const ListyTabele = () => {
           setTasks([...tasks, newTask]);
           setTitle("");
           setPriority("");
-        }}
+        }}}
       >
         <input
           type="text"
