@@ -4,6 +4,7 @@ import { Profile } from "./components/Profile";
 import { Test1 } from "./components/jakies_testy/Test1";
 import { Test2 } from "./components/jakies_testy/Test2";
 import { FormularzZTodo } from "./components/jakies_testy/FormularzZTodo";
+import { Parent } from "./components/components2/Parent";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Test1/>
       <Test2/>
       <FormularzZTodo/>
+      <Parent />
     </article>
   );
 }
