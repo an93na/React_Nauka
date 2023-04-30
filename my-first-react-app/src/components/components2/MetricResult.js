@@ -6,7 +6,7 @@ import { Metric3 } from "./Metric3";
 export const MetricsApp = () => {
   const [name, setName] = useState("Work");
   const [label, setLabel] = useState("32");
-  const [prevweek, setPrevweek] = useState("Last Week - 36hrs");
+  const [prevweek, setPrevweek] = useState("36");
   return (
     <article>
       <div style={{ display: "flex", gap: 20 }}>

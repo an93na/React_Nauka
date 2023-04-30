@@ -10,7 +10,7 @@ export const Metric1 = (props) => {
           {props.name} <span>•••</span>
         </p>
         <p className={classes.output}>{`${props.label}hrs`}</p>
-        <p className={classes.lastWeekOutput}>{props.prevweek}</p>
+        <p className={classes.lastWeekOutput}>{`Last Week - ${props.prevweek}hrs`}</p>
       </div>
     </div>
   );
