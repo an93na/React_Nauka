@@ -3,10 +3,7 @@ import { Metric1 } from "./Metric1";
 import { Metric2 } from "./Metric2";
 import { Metric3 } from "./Metric3";
 
-export const MetricsApp = () => {
-  const [name, setName] = useState("");
-  const [label, setLabel] = useState("");
-  const [prevweek, setPrevweek] = useState("");
+export const MetricsApp = (props) => {
 
   return (
     <article>
