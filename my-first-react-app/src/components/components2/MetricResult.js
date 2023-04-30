@@ -5,7 +5,7 @@ import { Metric3 } from "./Metric3";
 
 export const MetricsApp = () => {
   const [name, setName] = useState("Work");
-  const [label, setLabel] = useState("32hrs");
+  const [label, setLabel] = useState("32");
   const [prevweek, setPrevweek] = useState("Last Week - 36hrs");
   return (
     <article>
@@ -23,7 +23,7 @@ export const MetricsApp = () => {
        <option value="Play">Play</option>
        <option value="Study">Study</option>
       </select>
-      <input type="text" value={label} onChange={(event) => setLabel(event.target.value)}/>
+      <input type="text" value={label} onChange={(event) => setLabel(Number(event.target.value))}/>
     </form>
     <button type="Dodaj">Submit</button>
       </div>
