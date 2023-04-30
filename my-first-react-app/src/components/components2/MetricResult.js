@@ -17,10 +17,15 @@ export const MetricsApp = () => {
 
       <div>
       <form onSubmit={(e) => e.preventDefault()}>
-      <select>
+      <select onChange={(event) => setName(event.target.value)}>
        <option value="" hidden>Wybierz nazwę komponentu</option>
+       <option value="Work">Work</option>
+       <option value="Play">Play</option>
+       <option value="Study">Study</option>
       </select>
+      <input type="text" value={label} onChange={(event) => setLabel(event.target.value)}/>
     </form>
+    <button type="Dodaj">Submit</button>
       </div>
 
 
