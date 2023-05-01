@@ -5,19 +5,23 @@ export const MetricsApp = () => {
   const [name, setName] = useState("Work");
   const [label, setLabel] = useState("32");
   const [prevweek, setPrevweek] = useState("36");
-  const [element, setElement] = useState([]);
+  const [element, setElement] = useState([
+    { name: "clean", label: "6", prevweek: "4" },
+  ]);
   return (
     <article>
       <div style={{ display: "flex", gap: 20 }}>
         <Metric1 name={name} label={label} prevweek={prevweek} />
       </div>
 
-      <form onSubmit={(e)=>{
-        e.preventDefault()
-        const newElement = {name: name, label: label, prevweek: prevweek}
-        const nowyEle = [...element, newElement];
-        setElement(nowyEle);
-      }}>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          const newElement = { name: name, label: label, prevweek: prevweek };
+          const nowyEle = [...element, newElement];
+          setElement(nowyEle);
+        }}
+      >
         <select onChange={(event) => setName(event.target.value)}>
           <option value="" hidden>
             Wybierz nazwę komponentu
@@ -61,7 +65,7 @@ export const MetricsApp = () => {
           }}
         />
         16h
-      <button type="submit">Click</button>
+        <button type="submit">Click</button>
       </form>
     </article>
   );
