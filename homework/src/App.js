@@ -32,6 +32,7 @@ import { Parent4 } from "./ex3/ZadChlPr4";
 import { CounterWithProps } from "./ex3/CounterWithProps";
 import { ListyTabele } from "./ex3/ListyTabele";
 import { GrandParent } from "./ex3/zadfun/GrandParent";
+import { SimpleTodoList } from "./powtorkaFormularz/SimpleToDoList";
 
 function App() {
   return (
@@ -68,6 +69,7 @@ function App() {
       <CounterWithProps />
       <ListyTabele />
       <GrandParent/>
+      <SimpleTodoList/>
     </div>
   );
 }
