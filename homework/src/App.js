@@ -33,6 +33,7 @@ import { CounterWithProps } from "./ex3/CounterWithProps";
 import { ListyTabele } from "./ex3/ListyTabele";
 import { GrandParent } from "./ex3/zadfun/GrandParent";
 import { SimpleTodoList } from "./powtorkaFormularz/SimpleToDoList";
+import { WyswietlanieWarunkowe } from "./wyswietlanieWarunkowe/WyswietlanieWarunkowe";
 
 function App() {
   return (
@@ -70,6 +71,7 @@ function App() {
       <ListyTabele />
       <GrandParent/>
       <SimpleTodoList/>
+      <WyswietlanieWarunkowe />
     </div>
   );
 }
