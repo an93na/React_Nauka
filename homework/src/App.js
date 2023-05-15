@@ -34,6 +34,7 @@ import { ListyTabele } from "./ex3/ListyTabele";
 import { GrandParent } from "./ex3/zadfun/GrandParent";
 import { SimpleTodoList } from "./powtorkaFormularz/SimpleToDoList";
 import { WyswietlanieWarunkowe } from "./wyswietlanieWarunkowe/WyswietlanieWarunkowe";
+import { Zad1 } from "./wyswietlanieWarunkowe/Zad1/Zad1";
 
 function App() {
   return (
@@ -72,6 +73,7 @@ function App() {
       <GrandParent/>
       <SimpleTodoList/>
       <WyswietlanieWarunkowe />
+      <Zad1/>
     </div>
   );
 }
