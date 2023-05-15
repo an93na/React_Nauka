@@ -36,6 +36,7 @@ import { SimpleTodoList } from "./powtorkaFormularz/SimpleToDoList";
 import { WyswietlanieWarunkowe } from "./wyswietlanieWarunkowe/WyswietlanieWarunkowe";
 import { Zad1 } from "./wyswietlanieWarunkowe/Zad1/Zad1";
 import { Zad2 } from "./wyswietlanieWarunkowe/Zad2/Zad2";
+import { Zad3 } from "./wyswietlanieWarunkowe/Zad3/Zad3";
 
 function App() {
   return (
@@ -76,6 +77,7 @@ function App() {
       <WyswietlanieWarunkowe />
       <Zad1 />
       <Zad2 />
+      <Zad3 />
     </div>
   );
 }
