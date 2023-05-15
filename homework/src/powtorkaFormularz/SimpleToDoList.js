@@ -10,6 +10,7 @@ export const SimpleTodoList = () => {
   ]);
   const [todoTitle, setTodoTitle] = useState("czesc");
   return (
+    
     <article>
       <h4>SimpleTodoList</h4>
       <form
