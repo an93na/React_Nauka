@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { WeightConverter } from "./components/WeightConverter";
 
 export const SimpleTodoList = () => {
   const [tasks, setTask] = useState([
@@ -10,8 +11,8 @@ export const SimpleTodoList = () => {
   ]);
   const [todoTitle, setTodoTitle] = useState("czesc");
   return (
-    
     <article>
+      <WeightConverter />
       <h4>SimpleTodoList</h4>
       <form
         action=""
