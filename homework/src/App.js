@@ -37,6 +37,7 @@ import { WyswietlanieWarunkowe } from "./wyswietlanieWarunkowe/WyswietlanieWarun
 import { Zad1 } from "./wyswietlanieWarunkowe/Zad1/Zad1";
 import { Zad2 } from "./wyswietlanieWarunkowe/Zad2/Zad2";
 import { Zad3 } from "./wyswietlanieWarunkowe/Zad3/Zad3";
+import { CyklZyciaKomponentu } from "./cyklZyciaKomponentu/CyklZyciaKomp";
 
 function App() {
   return (
@@ -78,6 +79,7 @@ function App() {
       <Zad1 />
       <Zad2 />
       <Zad3 />
+      <CyklZyciaKomponentu />
     </div>
   );
 }
