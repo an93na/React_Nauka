@@ -22,7 +22,13 @@ export const Zad1 = () => {
         <p>Lorem ipsum dolor sit amet.</p>
       )}
 
-      <button style={{ width: "fit-content" }} onClick={() => setRead((prevState) => !prevState)}> {read? 'Read less' : 'Read more'} </button>
+      <button
+        style={{ width: "fit-content" }}
+        onClick={() => setRead((prevState) => !prevState)}
+      >
+        {" "}
+        {read ? "Read less" : "Read more"}{" "}
+      </button>
     </article>
   );
 };
