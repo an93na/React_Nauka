@@ -8,9 +8,9 @@ export const WeightConverter = () => {
     <div style={{ margin: 10, padding: 20, border: "2px solid gray" }}>
       <h4>Weight Converter</h4>
       <Form value={value} setValue={setValue}/>
-      <Output/>
-      <Output/>
-      <Output/>
+      <Output value={value*1.5}/>
+      <Output value={value*2.5}/>
+      <Output value={value*3.5}/>
     </div>
   );
 };
