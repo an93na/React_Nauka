@@ -30,7 +30,19 @@ export const ListZ4 = () => {
               <td>{todo.title}</td>
               <td>{todo.completed ? "Yes" : "No"}</td>
               <td>
-                <button>
+                <button 
+                  onClick={() => {
+                    fetch(`http://localhost:3010/todos/${todo.id}`, {
+                      method: "DELETE",
+                    }).then(() => {
+                      // fetch("http://localhost:3010/todos")
+                      //   .then((response) => response.json())
+                      //   .then((data) => {
+                      //     setTodos(data);
+                      //   });
+                    });
+                  }}
+                >
                   Delete
                 </button>
               </td>
