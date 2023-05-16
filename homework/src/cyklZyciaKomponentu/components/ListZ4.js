@@ -44,7 +44,7 @@ export const ListZ4 = () => {
                   <button
                     onClick={() => {
                       console.log(todo.id);
-                      fetch(`http://localhost:3010/todos/1`, {
+                      fetch(`http://localhost:3010/todos/${todo.id}`, {
                         method: "DELETE",
                       }).then(() => {
                         fetch("http://localhost:3010/todos")
