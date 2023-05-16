@@ -6,6 +6,11 @@ export const ListZ4 = () => {
     const [todos, setTodos] = useState([]);
 
   useEffect(() => {
+    fetch("http://localhost:3010/todos")
+      .then((response) => response.json())
+      .then((data) => {
+        setTodos(data);
+      });
     
   }, []);
 
@@ -38,8 +43,3 @@ export const ListZ4 = () => {
 }
 
 
-// fetch("http://localhost:3010/todos")
-//       .then((response) => response.json())
-//       .then((data) => {
-//         setTodos(data);
-//       });
