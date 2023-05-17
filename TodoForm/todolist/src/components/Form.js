@@ -16,9 +16,12 @@ export const Form = (props) => {
             priority,
           };
           props.setTodos((prevState) => [...prevState, newTodo]);
+          setPriority('');
+          setTitle('');
         }}
       >
         <input
+        required
           type="text"
           name=""
           id=""
@@ -27,6 +30,7 @@ export const Form = (props) => {
           onChange={(event) => setTitle(event.target.value)}
         />
         <select
+        required
           name=""
           id=""
           value={priority}

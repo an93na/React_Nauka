@@ -1,6 +1,6 @@
 import React from "react";
 
-export const TodoList = () => {
+export const TodoList = (props) => {
   return (
     <article>
       <table>
@@ -11,22 +11,26 @@ export const TodoList = () => {
             <th>Status</th>
             <th></th>
           </tr>
-        </thead>{" "}
+        </thead>
         <tbody>
-          <tr>
-            <td>pouczyć się Jsa</td>
-            <td>High</td>
+        {
+            props.todos.map((todo) => {
+                return <tr key={todo.id}>
+            <td>{todo.title}</td>
+            <td>{todo.priority}</td>
             <td>
-              <input type="checkbox" name="" id="" readOnly />
+              <input type="checkbox" name="" id="" readOnly checked={todo.status}/>
             </td>
             <td>
               <div style={{ display: "flex", gap: 20 }}>
-                {" "}
                 <button>Edit</button>
                 <button>Delete</button>
               </div>
             </td>
           </tr>
+            })
+        }
+          
         </tbody>
       </table>
     </article>
