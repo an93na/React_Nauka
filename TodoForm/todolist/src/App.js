@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Form } from "./components/Form";
 import { TodoList } from "./components/TodoList";
+import { EditModal } from "./components/EditModal";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -10,6 +11,7 @@ function App() {
       <article>Hello Word</article>
       <Form setTodos={setTodos}/>
       <TodoList todos={todos} setTodos={setTodos}/>
+      <EditModal />
     </div>
   );
 }
