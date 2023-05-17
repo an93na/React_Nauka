@@ -4,7 +4,7 @@ export const Form = () => {
   return (
     <article>
       <form action="">
-        <input type="text" name="" id="" />
+        <input type="text" name="" id="" placeholder="Todo title"/>
         <select name="" id="">
           <option value="" hidden>
             Select priority
