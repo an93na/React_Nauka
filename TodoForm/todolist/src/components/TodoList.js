@@ -20,6 +20,7 @@ export const TodoList = (props) => {
                 key={todo.id}
                 todo={todo}
                 setTodos={props.setTodos}
+                setTodoToEdit={props.setTodoToEdit}
               />
             );
           })}
