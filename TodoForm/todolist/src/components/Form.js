@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const Form = () => {
+export const Form = (props) => {
   const [title, setTitle] = useState("");
   const [priority, setPriority] = useState("");
   return (
@@ -15,6 +15,7 @@ export const Form = () => {
             title,
             priority,
           };
+          props.setTodos((prevState) => [...prevState, newTodo]);
         }}
       >
         <input
