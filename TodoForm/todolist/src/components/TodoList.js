@@ -15,7 +15,7 @@ export const TodoList = (props) => {
         </thead>
         <tbody>
           {props.todos.map((todo) => {
-            return <TodoListItem key={todo.id} todo={todo} />;
+            return <TodoListItem key={todo.id} todo={todo} setTodos={props.setTodos}/>;
           })}
         </tbody>
       </table>

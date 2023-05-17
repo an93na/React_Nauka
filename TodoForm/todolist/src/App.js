@@ -9,7 +9,7 @@ function App() {
     <div className="container">
       <article>Hello Word</article>
       <Form setTodos={setTodos}/>
-      <TodoList todos={todos}/>
+      <TodoList todos={todos} setTodos={setTodos}/>
     </div>
   );
 }
