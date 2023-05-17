@@ -20,7 +20,7 @@ export const TodoList = () => {
               <input type="checkbox" name="" id="" readOnly />
             </td>
             <td>
-              <div style={{display: 'flex', gap:20}}>
+              <div style={{ display: "flex", gap: 20 }}>
                 {" "}
                 <button>Edit</button>
                 <button>Delete</button>
