@@ -35,6 +35,11 @@ export const Filters = (props) => {
           <option value="todo">Todo</option>
         </select>
       </div>
+      <button onClick={()=> {
+        setSearch((prevState) => ({...prevState, title: ''}))
+        setSearch((prevState) => ({...prevState, priority: ''}))
+        setSearch((prevState) => ({...prevState, status: ''}))
+      }}>Reset</button>
     </article>
   );
 };
