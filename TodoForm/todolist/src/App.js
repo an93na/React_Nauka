@@ -3,6 +3,7 @@ import { Form } from "./components/Form";
 import { TodoList } from "./components/TodoList";
 import { EditModal } from "./components/EditModal";
 import { Filters } from "./components/Filters";
+import { Metrics } from "./components/Metrics";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -33,6 +34,7 @@ function App() {
       <article>Hello Word</article>
       <Form setTodos={setTodos}/>
       <Filters search={search} setSearch={setSearch}/>
+      <Metrics todos={todos}/>
       <TodoList todos={todosToDisplay} setTodos={setTodos} setTodoToEdit={setTodoToEdit}/>
       {!!todoToEdit && <EditModal setTodoToEdit={setTodoToEdit} todoToEdit={todoToEdit} setTodos={setTodos}/>}
     </div>
