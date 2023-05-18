@@ -27,10 +27,12 @@ export const Filters = (props) => {
           <option value="medium">Medium</option>
           <option value="high">High</option>
         </select>
-        <select name="" id="Select2">
+        <select name="" id="Select2" value={search.status} onChange={(e)=> setSearch((prevState) => ({...prevState, status: e.target.value}))}>
           <option value="" hidden>
             All
           </option>
+          <option value="done">Done</option>
+          <option value="todo">Todo</option>
         </select>
       </div>
     </article>
