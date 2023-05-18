@@ -12,7 +12,7 @@ function App() {
     <div className="container">
       <article>Hello Word</article>
       <Form setTodos={setTodos}/>
-      <Filters />
+      <Filters todos={todos} setTodos={setTodos}/>
       <TodoList todos={todos} setTodos={setTodos} setTodoToEdit={setTodoToEdit}/>
       {!!todoToEdit && <EditModal setTodoToEdit={setTodoToEdit} todoToEdit={todoToEdit} setTodos={setTodos}/>}
     </div>

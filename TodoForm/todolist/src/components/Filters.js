@@ -1,6 +1,7 @@
 import React from "react";
 
-export const Filters = () => {
+export const Filters = (props) => {
+    const {todos, setTodos} = props
   return (
     <article>
       <div style={{ display: "flex", gap: 300, padding: 10 }}>
