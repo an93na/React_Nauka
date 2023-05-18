@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 export const Filters = (props) => {
-    const {todos, setTodos} = props
+  const { search, setSearch } = props;
   return (
     <article>
+      <h3>Filters</h3>
       <div style={{ display: "flex", gap: 300, padding: 10 }}>
         <label htmlFor="Title">Title</label>
         <label htmlFor="Select1">Priority</label>
