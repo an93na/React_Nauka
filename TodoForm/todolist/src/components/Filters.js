@@ -7,6 +7,7 @@ export const Filters = (props) => {
       <h3>Filters</h3>
       <div style={{ display: "flex", gap: 20, padding: 10 }}>
         <label>
+          Title
           <input
             type="text"
             name=""
@@ -20,9 +21,9 @@ export const Filters = (props) => {
               }))
             }
           />{" "}
-          Title
         </label>
         <label>
+          Priority
           <select
             name=""
             id="Select1"
@@ -41,9 +42,9 @@ export const Filters = (props) => {
             <option value="medium">Medium</option>
             <option value="high">High</option>
           </select>{" "}
-          Priority
         </label>
         <label>
+          Status
           <select
             name=""
             id="Select2"
@@ -61,7 +62,6 @@ export const Filters = (props) => {
             <option value="done">Done</option>
             <option value="todo">Todo</option>
           </select>
-          Status
         </label>{" "}
       </div>
       <button
