@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-plugin-cypress": "^2.13.3",
     "jest-junit": "^16.0.0"
   }
 }
