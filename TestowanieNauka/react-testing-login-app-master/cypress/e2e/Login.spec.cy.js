@@ -10,4 +10,12 @@ describe("Login E2E Form", () => {
       .should("be.visible")
       .contains("test@example.pl");
   });
+  it("display error message on invalid email and chceck existing eamil and password inputs", () => {
+    cy.get('input[type="email"]').type("zly");
+    cy.get('input[type="password"]').type("cookies");
+    cy.get('button[data-testid="submit"]').click();
+    cy.get('div[data-testid="error"]')
+      .should("be.visible")
+      .contains("Email is not valid");
+  });
 });
