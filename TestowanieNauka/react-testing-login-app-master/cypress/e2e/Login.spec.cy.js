@@ -6,5 +6,8 @@ describe("Login E2E Form", () => {
     cy.get('input[type="email"]').type("test@example.pl");
     cy.get('input[type="password"]').type("cookies");
     cy.get('button[data-testid="submit"]').click();
-});
+    cy.get('div[data-testid="user"]')
+      .should("be.visible")
+      .contains("test@example.pl");
+  });
 });
