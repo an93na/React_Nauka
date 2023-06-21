@@ -17,13 +17,12 @@ describe("Login E2E Form", () => {
     cy.get('div[data-testid="error"]')
       .should("be.visible")
       .contains("Email is not valid");
-
-    });
-    it("resets from fields by click button", () => {
-      cy.get('input[type="email"]').type('test@example.pl');
-      cy.get('input[type="password"]').type('cookies')
-      cy.get('button[data-testid=reset]').click();
-      cy.get('input[type="email"]').should("have.value", "")
-      cy.get('input[type="password"]').should("have.value", "")
-    })
+  });
+  it("resets from fields by click button", () => {
+    cy.get('input[type="email"]').type("test@example.pl");
+    cy.get('input[type="password"]').type("cookies");
+    cy.get("button[data-testid=reset]").click();
+    cy.get('input[type="email"]').should("have.value", "");
+    cy.get('input[type="password"]').should("have.value", "");
+  });
 });
