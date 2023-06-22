@@ -10,8 +10,12 @@ describe("Login Component", () => {
     render(<Login />);
     const emailInput = screen.getByLabelText("Email");
     const passwordInput = screen.getByLabelText("Password");
+    const submittButton = screen.getByTestId("submit");
+        const resetButton = screen.getByTestId("reset");
 
     expect(emailInput).toBeInTheDocument();
     expect(passwordInput).toBeInTheDocument();
+    expect(submittButton).toBeInTheDocument();
+    expect(resetButton).toBeInTheDocument();
   });
 });
