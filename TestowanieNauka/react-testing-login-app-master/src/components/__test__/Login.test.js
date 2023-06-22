@@ -8,10 +8,10 @@ describe("Login Component", () => {
   });
   test("renders exist form elements", () => {
     render(<Login />);
-    const eamilInput = screen.getByLabelText("email");
-    const passwordInput = screen.getByLabelText("password");
+    const emailInput = screen.getByLabelText("Email");
+    const passwordInput = screen.getByLabelText("Password");
 
-    expect(eamilInput).toBeInTheDocument()
-    expect(passwordInput).toBeInTheDocument()
+    expect(emailInput).toBeInTheDocument();
+    expect(passwordInput).toBeInTheDocument();
   });
 });
