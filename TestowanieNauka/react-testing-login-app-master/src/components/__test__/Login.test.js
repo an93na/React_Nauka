@@ -27,6 +27,7 @@ describe("validateEmail Function", () => {
       "nowyEmail@onet.pll",
       "john.dog@gmail.ccom",
       "user1234@test.co",
+      "hjgjg@gy.pl",
     ];
     validEmails.forEach((email) => {
       expect(validEmails(email)).toBe(true);
