@@ -9,7 +9,7 @@ const App = () => {
     <div className="Container app-container">
       <Row>
         <Col>
-          <h1>React Testing App</h1>
+          <h1>React Testing App ćwiczenia</h1>
         </Col>
       </Row>
       <Row>
