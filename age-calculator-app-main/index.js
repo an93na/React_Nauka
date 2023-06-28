@@ -1,2 +1,2 @@
-const day = document.getElementByName("day");
+const day = document.querySelector("#day");
 const resultDay = day.addEventListener("input", () => console.log());
