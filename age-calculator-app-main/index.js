@@ -1,2 +1,2 @@
-const day = document.getElementByName('day')
-const resultDay = day.addEventListener('input', () => console.log())
+const day = document.getElementByName("day");
+const resultDay = day.addEventListener("input", () => console.log());
