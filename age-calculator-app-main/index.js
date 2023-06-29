@@ -1,2 +1,2 @@
 const day = document.querySelector("#day");
-const resultDay = day.addEventListener("input", () => console.log(this.value));
+const resultDay = day.addEventListener("input", () => console.log(day.value));
