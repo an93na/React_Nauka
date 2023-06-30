@@ -5,4 +5,4 @@ const month = document.querySelector('#month')
 const resultMonth = month.addEventListener("input", () => console.log(month.value))
 
 const year = document.querySelector('#year')
-const resultYear = month.addEventListener("input", () => console.log(month.value))
+const resultYear = year.addEventListener("input", () => console.log(year.value))
