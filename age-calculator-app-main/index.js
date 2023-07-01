@@ -13,4 +13,5 @@ const resultYear = year.addEventListener("input", () =>
 
 const lista = document.querySelector('#lista');
 const li1 = document.createElement('li');
+li1.innerText = `${resultDay} day`
 const resultUl1 = lista.appendChild(li1);
