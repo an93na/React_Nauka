@@ -10,3 +10,7 @@ const year = document.querySelector("#year");
 const resultYear = year.addEventListener("input", () =>
   console.log(year.value)
 );
+
+const lista = document.querySelector('#lista');
+const li1 = document.createElement('li');
+const resultUl1 = lista.appendChild(li1);
